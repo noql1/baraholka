@@ -1,0 +1,11 @@
+const Router = require("express");
+const router = new Router();
+const itemRouter = require("./itemRoutes");
+const item_typeRouter = require("./item_typeRoutes");
+const skinRouter = require("./skinRoutes");
+const userRouter = require("./userRouter");
+router.use("/user", userRouter);
+router.use("/item", itemRouter);
+router.use("/item_type", item_typeRouter);
+router.use("/skin", skinRouter);
+module.exports = router;
