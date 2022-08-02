@@ -1,5 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 
-export const Basket = () => {
-  return <div>Basket</div>;
-};
+export class Basket extends Component {
+  render() {
+    return <div>Basket</div>;
+  }
+}
+
+export default Basket;
